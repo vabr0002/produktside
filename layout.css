@@ -1,0 +1,75 @@
+@media (min-width: 700px) {
+  body {
+    background-color: black;
+  }
+
+  h1 {
+    color: aliceblue;
+  }
+
+  h3 {
+    color: aliceblue;
+  }
+
+  p {
+    color: aliceblue;
+  }
+
+  .vinter {
+    background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1531.webp);
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    text-align: center;
+  }
+
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  .kategori {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .produkt_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  article > a:hover {
+    opacity: 0.5;
+  }
+  main {
+    margin: 40px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: red;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
