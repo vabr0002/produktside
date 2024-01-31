@@ -1,46 +1,79 @@
 @media (min-width: 700px) {
-  body {
-    background-color: black;
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 100px 200px 200px 200px;
   }
 
-  h1 {
-    color: aliceblue;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
   }
 
-  h3 {
-    color: aliceblue;
+  .tema {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 15px;
   }
 
-  p {
-    color: aliceblue;
+  .tema p {
+    font-family: "Pavanam", sans-serif;
+    font-size: 4rem;
+    color: #fffcf3;
+  }
+
+  .tema:hover p {
+    color: hotpink;
+  }
+
+  .tema:hover {
+    opacity: 0.8;
   }
 
   .vinter {
-    background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1531.webp);
-    background-size: cover;
-    width: 30vw;
-    height: 30vw;
-    text-align: center;
+    background-image: url(../billeder/vinter.webp);
+  }
+  .forår {
+    background-image: url(../billeder/forår.webp);
+  }
+
+  .sommer {
+    background-image: url(../billeder/sommer.webp);
+  }
+  .efterår {
+    background-image: url(../billeder/efterår.webp);
   }
 
   .produktliste {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
-  }
-
-  .kategori {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
   }
 
   .produkt_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding: 100px 150px 0 150px;
+  }
+
+  .produkt_grid h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .produkt_grid p {
+    padding: 50px;
+    font-size: 1.2rem;
   }
 
   img {
@@ -48,19 +81,10 @@
     height: auto;
   }
   article > a:hover {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   main {
     margin: 40px;
-  }
-
-  nav a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: red;
-    background-color: blue;
-    padding: 5px;
-    border-radius: 5px;
   }
 
   nav {
@@ -71,5 +95,19 @@
     margin-right: auto;
     justify-content: center;
     margin-top: 30px;
+  }
+
+  article div:first-child:hover {
+    opacity: 0.8;
+  }
+
+  .rabat_style {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .udsolgt_grid {
+    display: flex;
   }
 }
