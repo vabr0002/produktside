@@ -55,9 +55,10 @@
 
   .produktliste {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 200px);
     gap: 50px;
     padding: 50px;
+    margin: auto;
   }
 
   .produkt_grid {
@@ -110,4 +111,52 @@
   .udsolgt_grid {
     display: flex;
   }
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_grid {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.grid_1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  gap: 100px;
+}
+
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+
+  gap: 50px;
+  padding: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vinter {
+  background-image: url(../billeder/vinter.webp);
+}
+.forår {
+  background-image: url(../billeder/forår.webp);
+}
+
+.sommer {
+  background-image: url(../billeder/sommer.webp);
+}
+.efterår {
+  background-image: url(../billeder/efterår.webp);
 }
